@@ -1,18 +1,10 @@
-# ChallengeNET Origin
-
-¡Bienvenidos/as al Challenge .NET de Origin!
+# ChallengeNET
 
 El desarrollo consiste en una interfaz de cajero ATM desarrollada en C#, utilizando .NET Core para el backend, Entity Framework 6 para el manejo del mapeo objeto-relacional (ORM) y SQL Server como base de datos.
 
 Para el frontend, se utilizó el patrón MVC de .NET, junto con jQuery y Bootstrap para la interfaz de usuario.
 
 Tanto el backend como el frontend están desarrollados utilizando el framework .NET 6.
-
-Si tenes alguna pregunta o necesitas más información, no dudes en contactarme.
-
-¡Gracias por tu interés!
-
----
 
 ## Instrucciones de instalación
 
