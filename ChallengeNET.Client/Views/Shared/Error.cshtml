@@ -1,0 +1,10 @@
+﻿@model ErrorViewModel
+@{
+    ViewData["Title"] = "Error";
+}
+
+<h1 class="text-danger">Hubo un error, revise el problema y presione el botón para poder seguir operando.</h1>
+<h2 class="text-danger">@Model.ErrorMessage</h2>
+
+
+<button type="button" class="btn btn-dark" onclick="history.go(-1)">Atras</button>

@@ -1,0 +1,46 @@
+﻿.table_teclado {
+    margin: 0 auto; /* Centrar horizontalmente */
+    border-collapse: collapse; /* Colapsar bordes */
+    border: 2px solid #000; /* Grosor medio de borde */
+    font-family: Arial, sans-serif; /* Fuente de texto */
+    width: 300px;
+}
+
+    .table_teclado tr td {
+        padding: .2em .5em; /* Espaciado interno */
+        border: 1px solid #757575; /* Grosor de borde */
+        text-align: center; /* Alinear texto al centro */
+        font-size: 18px; /* Tamaño de fuente */
+        background: #828282; /* Color de fondo */
+        color: #FFF; /* Color de texto */
+        cursor: pointer; /* Cambiar el cursor al pasar por encima */
+        border-radius: 3px; /* Bordes redondeados */
+        position: relative; /* Posición relativa para el botón */
+        max-width: 10px; /* Ancho máximo */
+    }
+
+        .table_teclado tr td:hover {
+            background: #525252; /* Cambiar el color de fondo al pasar el cursor */
+        }
+
+.btn_delete {
+    position: absolute; /* Posición absoluta para el botón */
+    left: .1em; /* Posición izquierda */
+    bottom: .1em; /* Posición inferior */
+    width: 30px; /* Ancho del botón */
+    height: 30px; /* Altura del botón */
+}
+
+.btn-delete {
+    border: 2px solid #000; /* Grosor de borde para el botón */
+    padding: 5px 10px; /* Espaciado interno del botón */
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif; /* Fuente de texto */
+    font-size: 14px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima del botón */
+}
+
+    .btn-delete:hover {
+        background-color: #333; /* Cambiar el color de fondo al pasar el cursor */
+    }

@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ChallengeNET.Shared/bin/Debug/net6.0
+/.vs
+/ChallengeNET.Application/bin/Debug/net6.0
+/ChallengeNET.Application/obj/Debug/net6.0
+/ChallengeNET.Application/obj
+/ChallengeNET.Client/bin/Debug/net6.0
+/ChallengeNET.Client/obj/Debug/net6.0
+/ChallengeNET.Client/obj
+/ChallengeNET.Data/bin/Debug/net6.0
+/ChallengeNET.Data/obj
+/ChallengeNET.Shared/obj
+/ChallengeNET.WebApi/bin/Debug/net6.0
+/ChallengeNET.WebApi/obj/Debug/net6.0
+/ChallengeNET.WebApi/obj

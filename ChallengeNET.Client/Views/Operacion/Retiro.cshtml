@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Retiro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model RetiroVM
+<div class="text-center">
+    <h2>Por favor ingrese el monto a retirar.</h2>
+    @Html.TextBoxFor(x => x.monto_retiro, new {@readonly = "readonly", @class = "teclado_text", @type = "text", @id = "campo"})
+    <button class="btn btn-primary" id="btn-aceptar" type="submit">Aceptar</button>
+    <partial name="_TecladoVirtual" />
+    <button type="button" class="btn btn-dark" onclick="history.go(-1)">Atras</button>
+</div>
+<script src="~/js/Retiro.js"></script>

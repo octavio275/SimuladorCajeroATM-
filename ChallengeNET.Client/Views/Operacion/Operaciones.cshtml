@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Operaciones";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model List<OperacionesVM>
+<h2>Seleccione una operación para continuar.</h2>
+<div class="align-content-center">
+    <button type="button" id="btn-balance" class="btn btn-primary" onclick="location.href='Balance'">Balance</button>
+    <button type="button" id="btn-retiro" class="btn btn-success" onclick="location.href='Retiro'">Retiro</button>
+    <button type="button" class="btn btn-danger" onclick="location.href='/Home'">Salir</button>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Tarjeta</th>
+            <th scope="col">Código operación</th>
+            <th scope="col">Fecha de operación</th>
+            <th scope="col">Monto</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var operacion in Model)
+        {
+            <tr>
+                <td>@operacion.operacion_id</td>
+                <td>@operacion.Tarjeta.nro_tarjeta</td>
+                <td>@operacion.cod_operacion</td>
+                <td>@operacion.fecha_operacion</td>
+                @if (operacion.cod_operacion.Equals("Retiro"))
+                {
+                    foreach (var retiro in operacion.Retiros)
+                    {
+                        <td>- @retiro.monto_retiro</td>
+                    }
+                }
+            </tr>
+        }
+    </tbody>
+</table>

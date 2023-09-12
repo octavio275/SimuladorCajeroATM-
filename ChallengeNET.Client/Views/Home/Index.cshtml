@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model TarjetaVM
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido/da</h1>
+    <p>Por favor ingrese los 16 dígitos de su tarjeta para poder iniciar sesión.</p>
+    @Html.TextBoxFor(x => x.nro_tarjeta, new {@readonly = "readonly", @class = "teclado_text", @type = "text", @id = "campo"})
+    <button class="btn btn-primary" id="btn-submit" type="submit">Aceptar</button>
+    <partial name="_TecladoVirtual" />
+</div>
+<script src="~/js/Home.js"></script>

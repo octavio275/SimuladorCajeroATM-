@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Ingresar Pin";
+}
+@model TarjetaVM
+
+<div class="text-center">
+    <h2>Por favor ingrese el pin de seguridad de su tarjeta para poder iniciar sesión.</h2>
+    @Html.TextBoxFor(x => x.pin_tarjeta, new {@readonly = "readonly", @class = "teclado_text", @type = "text", @id = "campo", @maxlenght = 4})
+    <button class="btn btn-primary" id="btn-aceptar" type="submit">Aceptar</button>
+    <partial name="_TecladoVirtual" />
+</div>
+<script src="~/js/IngresaPin.js"></script>
